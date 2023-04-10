@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOMEPAGE</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script defer src="app.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    </head>
+
+    <body>
+
+        <section>
+
+            <div class="intro">
+       
+                    <img src="images/rwlogo2.png">
+
+                <div class="fade">
+
+                    <img src="images/downarrow.png">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="main">
+
+                <nav>
+                    <img src="images/rwlogo2.png" class="logo">
+                        <ul>
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Resume</a></li>
+                        </ul>
+                </nav>
+
+                <div class="title">
+                    <p>HI, MY NAME IS</p>
+                    <h1>RICHARD</h1>
+                </div>
+
+                <div class="introduction">
+                   
+                    <p>Hi! My name is Richard and I am currently a third year undergraduate at the University of California, Riverside. I am majoring in media and cultural studies and hope to gain experience in various creative fields through internships and job opportunities. I am passionate about learning and would love to utilize and further my skills that I have gained from previous work. Some things I enjoy doing are making coffee, cooking, barbering, gaming, and building keyboards. I love to share my passion with others and talk about creative ideas!</p>
+                
+                </div>
+
+            <script>
+                ScrollReveal({
+                    reset: true,
+                    distance: '60px',
+                    duration: 2000,
+                    delay: 100,
+                })
+
+                ScrollReveal().reveal('nav', { delay: 100, origin: 'right' });
+                ScrollReveal().reveal('.title', {delay: 100, origin: 'left' });
+                ScrollReveal().reveal('.introduction', {delay: 100, origin: 'right' });
+                ScrollReveal().reveal('.main', {delay: 100});
+            </script>
+
+        </section>
+
+        </div>
+
+    </body>
+
+</html>
