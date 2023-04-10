@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto condensed', sans-serif;
+}
+
+/* SCROLL SNAP */
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    background-color: rgb(254, 243, 218);
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/* END */
+
+.intro {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 100vh;
+    background-color: rgb(254, 243, 218);
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url(images/photo1.PNG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 8%;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    background: white;
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 80%;
+}
+
+.title {
+    position: absolute;
+    bottom: 8%;
+    padding: 5px 8%;
+}
+
+.title p {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.introduction {
+    color: white;
+    font-size: 17px;
+    position: absolute;
+    display: flex-end;
+    justify-content: flex-end;
+    width: 550px;
+    bottom: 11%;
+    right: 9%;
+    line-height: 30px;
+    text-align: right;
+}
+
+.title h1 {
+    color: transparent;
+    font-size: 160px;
+    line-height: 160px;
+    margin-left: -7px;
+    -webkit-text-stroke: 1px white;
+    background: url(images/back2.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 30s linear infinite;
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.fade {
+    animation: fade 1.4s infinite alternate;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
