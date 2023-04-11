@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #131316;
+    color: #ffffff;
+    margin: 0;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    background-color: #131316;
+}
+
+.container {
+    margin: 150px auto;
+    width: 65%;
+    position: absolute;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 8%;
+    position: fixed;
+}
+
+nav ul {
+    font-family: 'Barlow', sans-serif;
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    background: white;
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 80%;
+}
+
+/* Navbar */
+
+/* design page 1 */
+
+.design {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#visionvry {
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url(images/photo2.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+video {
+    float: right;
+    width: 70vh;
+    height: 39.38vh;
+    border: 1px solid #3B3C3E;
+}
+
+.design1 {
+    font-family: 'roboto condensed', sans-serif;
+    padding-top: 140px;
+    font-size: 40px;
+}
+
+.design1 p {
+    color: #6D7176;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* page 1 */
+
+/* design page 2 */
+
+.flyer {
+    height: 60vh;
+    float: left;
+}
+
+.ticket {
+    height: 25vh;
+    width: 80vh;
+    float: right;
+}
+
+.design2 {
+    font-family: 'roboto condensed', sans-serif;
+    text-align: right;
+    font-size: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.design2 p {
+    color: #6D7176;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* page 2 */
+
+/* design page 3 */
+
+.design3 {
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 40px;
+    position: absolute;
+    bottom: 100px;
+    right: 400px;
+}
+
+.design3 p {
+    font-family: 'Barlow', sans-serif;
+    color: #6D7176;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+/* page 3 */
+
+/* scroll slider */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* scroll slider */
+
+.arrow2 {
+    animation: fade 1.4s infinite alternate;
+    position: absolute;
+    margin-top: 300px;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.resume {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.resume h1 {
+    font-family: 'roboto condensed', sans-serif;
+    font-size: 50px;
+}
+
+.resume p {
+    font-family: 'Barlow', sans-serif;
+    color: #aeafb3;
+    font-size: 40px;
+}

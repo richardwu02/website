@@ -6,71 +6,74 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HOMEPAGE</title>
-
         <link rel="stylesheet" href="style.css">
-        <script defer src="app.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
 
     </head>
 
     <body>
-
-        <section>
-
-            <div class="intro">
+        
+        <section id="intropage">
        
-                    <img src="images/rwlogo2.png">
+                    <img src="images/rwlogo2.png" class="rw">
 
-                <div class="fade">
-
-                    <img src="images/downarrow.png">
-
-                </div>
-
-            </div>
+                    <img src="images/downarrow.png" class="arrow">
 
         </section>
 
-        <section>
+        <div class="main">
 
-            <div class="main">
+        <a name="home" id="home">
+        <section id="mainpage">
 
                 <nav>
-                    <img src="images/rwlogo2.png" class="logo">
+                    <a href="#home"><img src="images/rwlogo2.png" class="logo"></a>
                         <ul>
-                            <li><a href="">Design</a></li>
-                            <li><a href="">Resume</a></li>
+                            <li><a href="design.html">Design</a></li>
+                            <li><a href="resume.html">Resume</a></li>
                         </ul>
                 </nav>
 
                 <div class="title">
+
                     <p>HI, MY NAME IS</p>
                     <h1>RICHARD</h1>
+
+                    <div class="row">
+                     
+                        <a href="design.html">DESIGN</a>
+                        <a href="resume.html">RESUME</a>
+                    
+                    </div>
+
                 </div>
 
                 <div class="introduction">
                    
-                    <p>Hi! My name is Richard and I am currently a third year undergraduate at the University of California, Riverside. I am majoring in media and cultural studies and hope to gain experience in various creative fields through internships and job opportunities. I am passionate about learning and would love to utilize and further my skills that I have gained from previous work. Some things I enjoy doing are making coffee, cooking, barbering, gaming, and building keyboards. I love to share my passion with others and talk about creative ideas!</p>
+                    <p>Hi! My name is Richard and I'm currently a third year undergraduate at the University of California, Riverside. Everything on this website was coded on HTML/CSS and designed on Adobe Creative Cloud. I'm passionate about web development, design, photography, and videography and hope to gain professional experience through work and internships. Some things I enjoy doing are making coffee, cooking, barbering, gaming, and building keyboards. I love to share my passion with others and talk about creative ideas!</p>
                 
                 </div>
 
-            <script>
-                ScrollReveal({
-                    reset: true,
-                    distance: '60px',
-                    duration: 2000,
-                    delay: 100,
-                })
-
-                ScrollReveal().reveal('nav', { delay: 100, origin: 'right' });
-                ScrollReveal().reveal('.title', {delay: 100, origin: 'left' });
-                ScrollReveal().reveal('.introduction', {delay: 100, origin: 'right' });
-                ScrollReveal().reveal('.main', {delay: 100});
-            </script>
-
         </section>
+        </a>
 
         </div>
+
+        <script>
+            ScrollReveal({
+                reset: true,
+                distance: '60px',
+                duration: 2000,
+                delay: 100,
+            })
+
+            ScrollReveal().reveal('nav', { delay: 100, origin: 'right' });
+            ScrollReveal().reveal('.title', {delay: 100, origin: 'left' });
+            ScrollReveal().reveal('.introduction', {delay: 100 });
+            ScrollReveal().reveal('.rw', {delay: 100, origin: 'top'});
+            ScrollReveal().reveal('.arrow', {delay: 100});
+        </script>
+
 
     </body>
 

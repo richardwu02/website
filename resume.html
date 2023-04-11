@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RESUME</title>
+        <link rel="stylesheet" href="style2.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="index.html#home"><img src="images/rwlogo2.png" class="logo"></a>
+                <ul>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+        </nav>
+
+        <section class="resume">
+
+            <div class="container">
+
+                <h1>EDUCATION:</h1>
+            
+                <div>
+                    <p>University of California, Riverside</p>
+                    <p>B.A Media and Cultural Studies</p>
+                    <p>Expected Graduation: June 2024</p>
+                
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="resume">
+
+            <h1>PROFESSIONAL EXPERIENCE</h1>
+            <img src="images/downarrow.png" class="arrow2">
+
+        </section>
+
+        <section class="resume">
+
+            <div class="container">
+
+                <h1>TEN REN'S TEA TIME</h1>
+                <p>Providing exceptional customer service for both dine-in customers and take-out orders for 500+ transactions weekly, resulting in regular customer return and high quality reviews
+                </p>
+
+            </div>
+
+        </section>
+
+        <script>
+            ScrollReveal({
+                reset: true,
+                distance: '60px',
+                duration: 2000,
+                delay: 100,
+            })
+
+            ScrollReveal().reveal('nav', { delay: 100, origin: 'right' });
+            ScrollReveal().reveal('.resume h1', { delay: 100, origin: 'left' });
+            ScrollReveal().reveal('.resume p', { delay: 100, origin: 'right' });
+            ScrollReveal().reveal('.arrow2', { delay: 100, origin: 'right' });
+        </script>
+
+    </body>
+
+</html>

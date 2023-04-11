@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'roboto condensed', sans-serif;
+    
 }
 
 /* SCROLL SNAP */
@@ -13,33 +14,45 @@ html, body {
     margin: 0;
     height: 100vh;
     scroll-snap-type: y mandatory;
-    background-color: rgb(254, 243, 218);
+    background-color: #131316;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 section {
-    height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
 /* END */
 
-.intro {
+#intropage {
     display: grid;
     place-items: center;
     align-content: center;
     height: 100vh;
-    background-color: rgb(254, 243, 218);
+    background-color: #131316;
+}
+
+.arrow {
+    animation: fade 1.4s infinite alternate;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .main {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.3),transparent), url(images/photo1.PNG);
+    background-image: linear-gradient(rgba(0,0,0,0.4),transparent), url(images/photo1.PNG);
     background-size: cover;
     background-position: center;
     position: relative;
 }
+
+/* Navbar */
 
 nav {
     display: flex;
@@ -55,6 +68,7 @@ nav {
 }
 
 nav ul {
+    font-family: 'Barlow', sans-serif;
     flex: 1;
     text-align: right;
 }
@@ -88,7 +102,12 @@ nav ul li a:hover::after {
     width: 80%;
 }
 
+/* Navbar */
+
+/* Body text */
+
 .title {
+    font-family: 'roboto condensed', sans-serif;
     position: absolute;
     bottom: 8%;
     padding: 5px 8%;
@@ -100,7 +119,23 @@ nav ul li a:hover::after {
     font-weight: 600;
 }
 
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.row a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 1px solid white;
+}
+
 .introduction {
+    font-family: 'Barlow', sans-serif;
     color: white;
     font-size: 17px;
     position: absolute;
@@ -131,11 +166,8 @@ nav ul li a:hover::after {
     }
 }
 
-.fade {
-    animation: fade 1.4s infinite alternate;
-}
+/* Body text */
 
-@keyframes fade {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
+html::-webkit-scrollbar {
+    display: none;
+  }

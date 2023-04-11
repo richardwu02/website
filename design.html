@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RESUME</title>
+        <link rel="stylesheet" href="style2.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+    </head>
+
+    <body>
+
+        <nav>
+            <a href="index.html#home"><img src="images/rwlogo2.png" class="logo"></a>
+                <ul>
+                    <li><a href="design.html">Design</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                </ul>
+        </nav>
+
+        <section class="design" id="visionvry">
+
+            <div class="container">
+
+                <video controls>
+                    
+                    <source src="images/DIEFORYOU.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+
+                </video>
+            
+                <div class="design1">
+
+                    <h1>DIE FOR YOU</h1>
+                    <p>VISIONVRY</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="design">
+
+            <div class="container">
+
+                    <img class="flyer" src="images/flyer.png" alt="Homecoming flyer">
+                    <img class="ticket" src="images/ticket.jpg" alt="Homecoming ticket">
+
+                <div class="design2">
+
+                    <h1>HOMECOMING 2019</h1>
+                    <p>MKHS ASB</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="design">
+
+            <div class="container">
+
+                <img class="rw" src="images/rwlogo2.png" alt="Richard Wu logo">
+
+                <div class=design3>
+
+                <h1>LOGO DESIGN</h1>
+                <p>RICHARD WU</p>
+                
+                </div>
+
+            </div>
+
+        </section>
+
+        <script>
+            ScrollReveal({
+                reset: true,
+                distance: '60px',
+                duration: 2000,
+                delay: 100,
+            })
+            ScrollReveal().reveal('video', { delay: 100 });
+            ScrollReveal().reveal('.design1', { delay: 100, origin: 'left' });
+            ScrollReveal().reveal('nav', { delay: 100, origin: 'right' });
+            ScrollReveal().reveal('.ticket', { delay: 100, origin: 'top' });
+            ScrollReveal().reveal('.flyer', { delay: 100 });
+            ScrollReveal().reveal('.design2', { delay: 100, origin: 'right' });
+            ScrollReveal().reveal('.design3 p', { delay: 100 });
+            ScrollReveal().reveal('.design3 h1', { delay: 100, origin: 'top' });
+            ScrollReveal().reveal('.rw', { delay: 100, origin: 'right' });
+        </script>
+
+    </body>
+
+</html>
