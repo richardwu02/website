@@ -17,6 +17,8 @@ html.sr .load-hidden {
     visibility: hidden;
 }
 
+/* DESIGN PG */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -28,7 +30,6 @@ html.sr .load-hidden {
 }
 
 .container .heading {
-    font-family: 'Barlow', sans-serif;
     font-size: 52px;
     font-weight: 100;
     text-align: center;
@@ -122,6 +123,107 @@ html.sr .load-hidden {
     .container .popup img {
         width: 95%;
     }
+}
+
+/* Contact page */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: center;
+    margin: 40px 20 px 0 20px;
+    padding: 15% 4.2%;
+    padding-left: 10%;
+}
+
+.contact-container .heading {
+    font-size: 52px;
+    font-weight: 100;
+    text-align: left;
+    color: white;
+    margin-top: 10px;
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.contact-container .heading h3 {
+    padding-bottom: 15px;
+    font-size: 1em;
+    font-weight: lighter;
+    border-bottom: 1px solid white;
+}
+
+.contact {
+    display: flex;
+    position: relative;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.contact ul {
+    display: flex;
+    font-family: 'Barlow', sans-serif;
+    flex: 1;
+    text-align: right;
+}
+
+.contact ul li {
+    list-style: none;
+}
+
+.contact ul li a {
+    display: block;
+    color: white;
+    font-size: 2vh;
+    text-decoration: none;
+    position: relative;
+}
+
+.contact ul li a::after {
+    background: white;
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+
+.contact ul li a:hover::after {
+    width: 80%;
+}
+
+.contact-box {
+    flex: 50%;
+    line-height: 30px;
+}
+
+
+@media (max-width: 920px) {
+
+    .contact-container .heading {
+        font-size: 30px
+    }
+
+    .contact-container .heading h3{
+        padding-top: 30%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-box {
+        padding-bottom: 20%;
+    }
+
 }
 
 /* Navbar */
@@ -235,8 +337,6 @@ nav ul li a:hover::after {
         margin: 9px 0;
     }
 }
-
-/* Navbar */
 
 /* scroll slider */
 

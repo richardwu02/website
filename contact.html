@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DESIGN</title>
+        <title>CONTACT</title>
         <link rel="icon" href="images/rwlogo2.png">
         <link rel="stylesheet" href="style2.css">
         <script src="https://unpkg.com/scrollreveal"></script>
@@ -36,36 +36,25 @@
     
             </header>
 
-            <div class="container">
+            <div class="contact-container">
 
                 <div class="heading">
-                <h3>DESIGN GALLERY</h3>
+                <h3>CONTACT</h3>
                 </div>
 
-                <div class="gallery">
-
-                    <div class="column">
-                            <img src="images/ticket.jpg">
-                            <img src="images/flyer.png">
+                <div class="contact">
+                    <div class="contact-box">
+                        <h1>EMAIL</h1>
+                        <ul class="link">
+                            <li><a href="rrichardwu@gmail.com">rrichardwu@gmail.com</a></li>
+                        </ul>
                     </div>
-    
-                    <div class="column">
-                        <video poster="images/photo2.PNG" controls>
-                            <source src="images/DIEFORYOU.mp4" type="video/mp4">
-                         </video>
-                         <img src="images/photo1.png">
+                    <div class="contact-box">
+                        <h1>SOCIALS</h1>
+                        <ul class="link">
+                        <li><a href="https://www.linkedin.com/in/richard-wu" target="_blank">LINKEDIN</a></li>
+                        </ul>
                     </div>
-    
-                    <div class="column">
-                        <img src="images/bg.png">
-                        <img src="images/gallerylogo.png">
-                    </div>
-    
-                </div>
-
-                <div class="popup">
-                    <span>&times;</span>
-                    <img src="">
                 </div>
 
             </div>
@@ -80,7 +69,7 @@
                 delay: 100,
             })
             ScrollReveal().reveal('header', { delay: 100, origin: 'right' });
-            ScrollReveal().reveal('.column', { delay: 100, origin: 'right' });
+            ScrollReveal().reveal('.contact-box', { delay: 100, origin: 'right' });
             ScrollReveal().reveal('.heading', { delay: 100, origin: 'left' });
         </script>
 
@@ -89,19 +78,6 @@
             hamburger.onclick = function() {
             navbar = document.querySelector(".nav-bar");
             navbar.classList.toggle("active");
-            }
-        </script>
-
-        <script>
-            document.querySelectorAll('.column img').forEach(image =>{
-                image.onclick = () =>{
-                    document.querySelector('.popup').style.display = 'block';
-                    document.querySelector('.popup img').src = image.getAttribute('src');
-                }
-            });
-
-            document.querySelector('.popup span').onclick = () =>{
-                document.querySelector('.popup').style.display = 'none';
             }
         </script>
 
