@@ -239,6 +239,8 @@ header {
     padding: 0px 4%;
     height: 12vh;
     align-items: center;
+    -webkit-backdrop-filter:saturate(100%) blur(20px);
+    backdrop-filter: saturate(100%) blur(20px);
 }
 
 .logo {
