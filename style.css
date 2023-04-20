@@ -66,6 +66,8 @@ header {
     backdrop-filter: blur(2rem);
     height: 12vh;
     align-items: center;
+    -webkit-backdrop-filter:saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
 }
 
 .logo {
