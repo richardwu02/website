@@ -191,7 +191,7 @@ nav ul li a:hover::after {
 
 .title h1 {
     color: transparent;
-    font-size: 25vw;
+    font-size: 23vw;
     margin-left: -7px;
     -webkit-text-stroke: 1px white;
     background: url(images/back2.png);
