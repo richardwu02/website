@@ -235,14 +235,6 @@ nav ul li a:hover::after {
 
 /* Body text */
 
-html::-webkit-scrollbar {
-    display: none;
-  }
-
-html.sr #intropage {
-    visibility: hidden;
-}
-
 @media (min-width: 920px) {
 
     body { height: 100vh;
@@ -284,3 +276,24 @@ html.sr #intropage {
         right: 4%;
     }
 }
+
+/* scroll slider */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* scroll slider */
