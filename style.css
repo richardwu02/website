@@ -191,7 +191,7 @@ nav ul li a:hover::after {
 
 .title h1 {
     color: transparent;
-    font-size: 17vw;
+    font-size: 25vw;
     margin-left: -7px;
     -webkit-text-stroke: 1px white;
     background: url(images/back2.png);
@@ -211,7 +211,8 @@ nav ul li a:hover::after {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     border: 1px solid white;
 }
 
@@ -254,6 +255,11 @@ nav ul li a:hover::after {
     .title h1 {
         font-size: 8vw;
         line-height: 160px;
+    }
+
+    .row a {
+        margin-left: 0px;
+        margin-right: 20px;
     }
 
     .introduction {
